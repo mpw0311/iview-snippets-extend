@@ -3,6 +3,7 @@
     "displayName": "iview-snippets-extend",
     "publisher": "maopengwei",
     "description": "",
+    "icon": "public/logo.png",
     "version": "0.0.2",
     "engines": {
         "vscode": "^1.66.0"
@@ -11,17 +12,34 @@
         "Snippets"
     ],
     "scripts": {
-        "build": "vsce package"
+        "snippet": "node ./scripts/snippet-generator.js",
+        "build": "npm run build:readme && vsce package",
+        "build:readme": "node ./scripts/readme-generator.js"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/mpw0311/iview-snippets-extend.git"
-      },
+    },
+    "dependencies": {
+        "chalk": "^4.0.0",
+        "clear": "^0.1.0",
+        "figlet": "^1.5.2",
+        "handlebars": "^4.7.7",
+        "ora": "^5.4.0"
+    },
     "contributes": {
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/script/javascript.code-snippets"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/vue-html/form-item.code-snippets"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/vue-html/iview.code-snippets"
             }
         ]
     }
