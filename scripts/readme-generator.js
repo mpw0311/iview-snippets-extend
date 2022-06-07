@@ -1,9 +1,8 @@
 const path = require('path');
-const fs = require('fs');
 const util = require('util');
 const { log } = require('./libs/util');
 
-const MarkdownLoader = require('./libs/markdown-loader');
+const { MarkdownLoader } = require('./compiller/index');
 
 const promisify = util.promisify;
 // 控制台打印
@@ -11,11 +10,9 @@ const figlet = promisify(require('figlet'));
 // 清空命令行
 const clear = require('clear');
 
-
 const ivewReg = /iview.code-snippets$/;
 
 (async () => {
-
   clear();
 
   const content = await figlet('IVEW SNIPPET');
@@ -29,7 +26,7 @@ const ivewReg = /iview.code-snippets$/;
     output: path.resolve(__dirname, '../README.md'),
     models: [
       {
-        title:'iview',
+        title: 'iview',
         language: 'vue-html',
         description: 'iview 组件库 snippets',
         filter: (item) => ivewReg.test(item.path),
