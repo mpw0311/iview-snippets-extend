@@ -99,7 +99,7 @@ class SnippetLoader {
 
     await promisify(fs.writeFile)(outputPath, str);
 
-    ctx.spinner.start(`snippet write ok`);
+    ctx.spinner.succeed(`snippet write ok`);
 
     await next();
   }
