@@ -1,0 +1,28 @@
+{
+    "name": "iview-snippets-extend",
+    "displayName": "iview-snippets-extend",
+    "publisher": "maopengwei",
+    "description": "",
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "scripts": {
+        "build": "vsce package"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mpw0311/iview-snippets-extend.git"
+      },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

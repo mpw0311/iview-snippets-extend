@@ -1,0 +1,23 @@
+{
+  "my uuid": {
+    "prefix": ["uuid"],
+    "body": ["\"$UUID\""],
+    "description": "uuid"
+  },
+  "my random": {
+    "prefix": ["random"],
+    "body": ["\"$RANDOM\""],
+    "description": "random 长度为6的10进制随机数字字符串"
+  },
+  "my pagecond": {
+    "prefix": ["pagecond"],
+    "body": [
+      "pagecond: {",
+      "\tpage: 1,",
+      "\tpageSize: 10,",
+      "\tcount: 0,",
+      "},"
+    ],
+    "description": "分页器"
+  }
+}
