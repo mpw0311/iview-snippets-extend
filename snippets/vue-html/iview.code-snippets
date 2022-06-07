@@ -1,5 +1,5 @@
 {
-    "ivew row": {
+    "iview-extend row": {
         "prefix": [
             "iRow",
             "i-row"
@@ -7,9 +7,9 @@
         "body": [
             "<Row>\n\t<Col span=\"$1\">\n\t\t\n\t</Col>\n\t<Col span=\"$2\">\n\t\t\n\t</Col>\n</Row>"
         ],
-        "description": "iview row"
+        "description": "iview-extend row"
     },
-    "ivew col": {
+    "iview-extend col": {
         "prefix": [
             "iCol",
             "i-col"
@@ -17,9 +17,9 @@
         "body": [
             "<Col span=\"$1\">\n\t$2\n</Col>"
         ],
-        "description": "iview span"
+        "description": "iview-extend span"
     },
-    "ivew icon": {
+    "iview-extend icon": {
         "prefix": [
             "iIcon",
             "i-icon"
@@ -27,9 +27,9 @@
         "body": [
             "<Icon type=\"$1\" />"
         ],
-        "description": "iview icon"
+        "description": "iview-extend icon"
     },
-    "ivew card": {
+    "iview-extend card": {
         "prefix": [
             "iCard",
             "i-card"
@@ -39,9 +39,9 @@
             "\t<p slot=\"title\">$1</p>",
             "</Card>"
         ],
-        "description": "iview card"
+        "description": "iview-extend card"
     },
-    "ivew button": {
+    "iview-extend button": {
         "prefix": [
             "iButton",
             "i-button"
@@ -49,9 +49,9 @@
         "body": [
             "<Button type=\"${1:primary}\">$2</Button>"
         ],
-        "description": "iview button"
+        "description": "iview-extend button"
     },
-    "ivew buttongroup": {
+    "iview-extend buttongroup": {
         "prefix": [
             "iButtonGroup",
             "i-button-group"
@@ -59,9 +59,9 @@
         "body": [
             "<ButtonGroup><Button>Cancel</Button>\n<Button type=\"${1:primary}\">$2</Button></ButtonGroup>"
         ],
-        "description": "iview buttongroup"
+        "description": "iview-extend buttongroup"
     },
-    "ivew input": {
+    "iview-extend input": {
         "prefix": [
             "iInput",
             "i-input"
@@ -69,9 +69,9 @@
         "body": [
             "<Input v-model=\"${1}\" placeholder=\"${2}\"></Input>"
         ],
-        "description": "iview input"
+        "description": "iview-extend input"
     },
-    "ivew input number": {
+    "iview-extend input number": {
         "prefix": [
             "iInputnumber",
             "i-input-number"
@@ -79,9 +79,9 @@
         "body": [
             "<Input-number :max=\"${1:10}\" :min=\"${2:1}\" v-model=\"${3:model}\"></Input-number>"
         ],
-        "description": "iview input number"
+        "description": "iview-extend input number"
     },
-    "ivew table": {
+    "iview-extend table": {
         "prefix": [
             "iTable",
             "i-table"
@@ -89,9 +89,9 @@
         "body": [
             "<Table :columns=\"${1:column}\" :data=\"${2:data}\"></Table>"
         ],
-        "description": "iview table"
+        "description": "iview-extend table"
     },
-    "ivew select": {
+    "iview-extend select": {
         "prefix": [
             "iSelect",
             "i-select"
@@ -99,9 +99,9 @@
         "body": [
             "<Select v-model=\"${1:model}\">\n\t<Option v-for=\"${2:item} in ${3:list}\" :value=\"${4:value}\" :key=\"item\">${5}</Option>\n</Select>"
         ],
-        "description": "iview select"
+        "description": "iview-extend select"
     },
-    "ivew datetime picker": {
+    "iview-extend datetime picker": {
         "prefix": [
             "iDatepicker",
             "i-datepicker"
@@ -109,9 +109,9 @@
         "body": [
             "<Date-picker type=\"datetime\" format=\"yyyy/MM/dd HH:mm\" placeholder=\"选择日期和时间\"></Date-picker>"
         ],
-        "description": "iview datetime picker"
+        "description": "iview-extend datetime picker"
     },
-    "ivew upload": {
+    "iview-extend upload": {
         "prefix": [
             "iUpload",
             "i-upload"
@@ -119,9 +119,9 @@
         "body": [
             "<Upload action=\"${1}\">\n\t<Button type=\"ghost\" icon=\"ios-cloud-upload-outline\">上传文件</Button>\n</Upload>"
         ],
-        "description": "iview upload"
+        "description": "iview-extend upload"
     },
-    "ivew message": {
+    "iview-extend message": {
         "prefix": [
             "iMessage",
             "i-message"
@@ -129,9 +129,9 @@
         "body": [
             "this.$$Message.info('${1}');"
         ],
-        "description": "iview message"
+        "description": "iview-extend message"
     },
-    "iview notice": {
+    "iview-extend notice": {
         "prefix": [
             "iNotice",
             "i-notice"
@@ -142,9 +142,9 @@
             "\tdesc: ''",
             "});"
         ],
-        "description": "iview notice"
+        "description": "iview-extend notice"
     },
-    "iview form": {
+    "iview-extend form": {
         "prefix": [
             "iForm",
             "i-form"
@@ -156,9 +156,9 @@
             "\t</FormItem>",
             "</Form>"
         ],
-        "description": "iview form"
+        "description": "iview-extend form"
     },
-    "iview model": {
+    "iview-extend model": {
         "prefix": [
             "iModal",
             "i-modal"
@@ -171,9 +171,9 @@
             "\t${3}",
             "</Modal>"
         ],
-        "description": "iview modal"
+        "description": "iview-extend modal"
     },
-    "iview radio": {
+    "iview-extend radio": {
         "prefix": [
             "iRadio",
             "i-radio"
@@ -181,9 +181,9 @@
         "body": [
             "<Radio v-model=\"${1}\">${2}</Radio>"
         ],
-        "description": "iview radio"
+        "description": "iview-extend radio"
     },
-    "iview radiogroup": {
+    "iview-extend radiogroup": {
         "prefix": [
             "iRadioGroup",
             "i-radio-group"
@@ -194,9 +194,9 @@
             "\t<Radio label=\"${3}\"></Radio>",
             "</RadioGroup>"
         ],
-        "description": "iview radiogroup"
+        "description": "iview-extend radiogroup"
     },
-    "iview check-box": {
+    "iview-extend check-box": {
         "prefix": [
             "iCheckBox",
             "i-check-box"
@@ -204,9 +204,9 @@
         "body": [
             "<Checkbox v-model=\"${1}\">${2}</Checkbox>"
         ],
-        "description": "iview check-box"
+        "description": "iview-extend check-box"
     },
-    "iview checkboxgroup": {
+    "iview-extend checkboxgroup": {
         "prefix": [
             "iCheckboxGroup",
             "i-checkbox-group"
@@ -217,6 +217,6 @@
             "\t<Checkbox label=\"${3}\"></Checkbox>",
             "</CheckboxGroup>"
         ],
-        "description": "iview checkboxgroup"
+        "description": "iview-extend checkboxgroup"
     }
 }
