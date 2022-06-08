@@ -6,7 +6,7 @@ const { SnippetLoader } = require('./compiller/index');
 (async () => {
   clear();
 
-  const info = await figlet(' SNIPPET');
+  const info = await figlet('IVIEW SNIPPET');
   log(info);
 
   let [, , filePath = 'default.vue', command] = process.argv; // npm run snippet [filePath]
