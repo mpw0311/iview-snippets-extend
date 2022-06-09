@@ -1,0 +1,41 @@
+{
+    "iview-snippets-extend template": {
+      "scope": "vue",
+      "prefix": ["template"],
+      "body": [
+        "<template>",
+        "\t\t<div>",
+        "\t\t\t\t$1",
+        "\t\t</div>",
+        "</template>",
+        "<script>",
+        "export default {",
+        "\t\tname: '$TM_FILENAME_BASE',",
+        "\t\tcomponents: {},",
+        "\t\tdata () {",
+        "\t\t\t\treturn {",
+        "",
+        "\t\t\t\t}",
+        "\t\t},",
+        "\t\tcomputed: {",
+        "",
+        "\t\t},",
+        "\t\tmethods: {",
+        "",
+        "\t\t},",
+        "\t\twatch: {",
+        "",
+        "\t\t},",
+        "\t\tcreated () {",
+        "",
+        "\t\t},",
+        "\t\tmounted () {",
+        "",
+        "\t\t},",
+        "}",
+        "</script>"
+      ],
+      "description": "template 代码片段模板"
+    }
+  }
+  

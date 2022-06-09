@@ -20,8 +20,9 @@ const ivewReg = /iview.code-snippets$/;
   log(content);
 
   const app = new MarkdownLoader({
-    title: 'iview-snippet-extend SNIPPETS',
-    description: '',
+    title: 'iview-snippets-extend SNIPPETS',
+    description:
+      '`iview-snippets-extend`是在`iview-snippets`的基础上进行扩展，包含了`iview-snippets`中内容。',
     entry: path.resolve(__dirname, '../package.json'),
     output: path.resolve(__dirname, '../README.md'),
     models: [
@@ -32,7 +33,13 @@ const ivewReg = /iview.code-snippets$/;
         filter: (item) => ivewReg.test(item.path),
       },
       {
-        title: 'javascript',
+        title: 'iview-vue',
+        language: 'vue',
+        description: 'vue 页面模板代码片段',
+        filter: (item) => /\/vue.code-snippets$/.test(item.path),
+      },
+      {
+        title: 'iview-javascript',
         language: 'javascript',
         description: 'js 代码片段',
         filter: (item) => item.language === 'javascript',

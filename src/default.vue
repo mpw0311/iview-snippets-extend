@@ -1,16 +1,12 @@
 <template>
-    <div></div>
+    <div>
+        $1
+    </div>
 </template>
 <script>
 export default {
-    name: 'default',
+    name: '$TM_FILENAME_BASE',
     components: {},
-    props: {
-        value: {
-            type: String,
-            default: ''
-        }
-    },
     data () {
         return {
 
