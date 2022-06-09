@@ -1,2 +1,0 @@
-- vsce login maopengwei
-- vsce publish

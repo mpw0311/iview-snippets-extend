@@ -15,7 +15,7 @@ const ivewReg = /iview.code-snippets$/;
 (async () => {
   clear();
 
-  const content = await figlet('IVEW SNIPPET');
+  const content = await figlet('IVIEW SNIPPET');
 
   log(content);
 

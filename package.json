@@ -4,9 +4,9 @@
     "publisher": "maopengwei",
     "description": "",
     "icon": "public/logo.png",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
-        "vscode": "^1.66.0"
+        "vscode": "^1.50.0"
     },
     "categories": [
         "Snippets"
@@ -38,7 +38,23 @@
                 "path": "./snippets/vue-html/form-item.code-snippets"
             },
             {
+                "language": "vue",
+                "path": "./snippets/vue-html/form-item.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/vue-html/form-item.code-snippets"
+            },
+            {
                 "language": "vue-html",
+                "path": "./snippets/vue-html/iview.code-snippets"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/vue-html/iview.code-snippets"
+            },
+            {
+                "language": "html",
                 "path": "./snippets/vue-html/iview.code-snippets"
             }
         ]
